@@ -1,5 +1,3 @@
-const inventory = require('./inventory');
-
 function getAllCarYears() {
     const carYears = [];
     for (let i = 0; i < inventory.length; i++) {

@@ -1,5 +1,4 @@
 const findCarById = require('../problem1');
-const inventory = require('../inventory');
 
 const car33 = findCarById(inventory, 33);
 if (car33) {

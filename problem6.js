@@ -1,9 +1,9 @@
-const inventory = require('./inventory');
-
 function filterBMWAndAudi() {
     const filteredCars = [];
+    const allowedMakes = ['BMW', 'Audi'];
+
     for (let i = 0; i < inventory.length; i++) {
-        if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
+        if (allowedMakes.includes(inventory[i].car_make)) {
             filteredCars.push(inventory[i]);
         }
     }
